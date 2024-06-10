@@ -1,0 +1,13 @@
+Inventory App
+A. Connect to Local Database
+Complete the login and logout functionalities.
+Provide sessions for users after logging in.
+B. Scan QR Function (Import)
+After scanning the QR code, populate the strings correctly into their respective information fields.
+Confirm -> Push data into the database.
+Add the function to manually input information, allowing users to fill in the information fields themselves.
+C. Scan QR Function (Export)
+After scanning the QR code, capture the Carton ID. Based on the database, display the remaining quantity in the warehouse.
+QT1 Station
+Write information for DUT (Device Under Test) to update firmware.
+Test the new firmware and identify errors.
