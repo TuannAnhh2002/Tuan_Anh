@@ -1,0 +1,13 @@
+1. Inventory App 
+A. Search function:
+- Build a search screen with functions to search for data outside the database, such as Input and Inventory.
+- Build Filter&Scan function for Search, user can select what they wanna search & can scan QR Code.
+B. History function: 
+- Build a history screen with two tabs, Export and Import, allowing users to select and search.
+C. Export & Import Input:
+- Control user inputs to prevent incorrect information entry.
+- Add notification for user when they export & import.
+
+2. QT1 Station:
+- Update new script from YaoWen, test & help him fix the script. (Hai Assist)
+- Update information new FW for DUT.
