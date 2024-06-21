@@ -4,8 +4,16 @@ from datetime import datetime
 import os
 import shutil
 import csv
+import logging
 
 app = Flask(__name__)
+
+class NoPingFilter(logging.Filter):
+    def filter(self, record):
+        return '/ping' not in record.getMessage()
+
+# Apply the filter to Flask's default logger
+app.logger.addFilter(NoPingFilter())
 
 def backup_database():
     now = datetime.now()
@@ -37,6 +45,9 @@ def get_db_connection():
     conn.row_factory = sqlite3.Row
     return conn
 
+@app.route('/ping', methods=['GET'])
+def ping():
+    return jsonify({'message': 'pong'})
 
 @app.route('/execute_sql', methods=['POST'])
 def execute_sql():
@@ -66,7 +77,6 @@ def execute_sql():
             backup_database()
         log_query(sql_query, status)
         conn.close()
-
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
