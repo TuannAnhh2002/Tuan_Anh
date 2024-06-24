@@ -1,0 +1,14 @@
+1. SMT Inventory App 
+A. Audit function:
+- Build Audit function --> User can scan QR code and check audit.
+B.Language:
+- Add 4 language for all screen.
+C. Online/Offline function
+- Have notification when user are online/offline. (On going)
+D. Build desktop app
+- User can run the app in desktop by run Inventory.exe file.
+E. Add & search & delete employee function:
+- User can add new employee ID, search & delete employee.
+
+2. QT1 Station:
+Support Mr Kevin modify new BTN function for QT Donut & test new item attached from Yaowen.
