@@ -1,0 +1,17 @@
+1. SMT Inventory App 
+A. Zebra device scan QR code function
+- Write scan function for Zebra device.
+B. Audit function:
+- Write function scan multiple times for check Audit.
+- Add save log for Audit Screen, user can save log (CSV file) for Audit.
+C. Storage Shelves Management:
+- User can add new Storage Shelves.
+- Write function for import, each Storage Shelves ID only have 3 PNs.
+D. Catch new QR code type
+- Write function for new type of QR Code
+
+2. QT1 Station:
+A. Donut:
+- Test 3 times QT, Encoder, MMI, OTA, Burnin.
+B. QSM
+- Write information for DUT.
